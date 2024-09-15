@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user_model"
+            type="com.example.tutorial.architecture_components.binding_adapter_5.model.UserModel" />
+    </data>
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgView"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{user_model.name}"
+            app:error="@{@drawable/img}"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </RelativeLayout>
+</layout>

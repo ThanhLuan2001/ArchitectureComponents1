@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Architecture Components</string>
+    <string name="change_value">Change value</string>
+    <string name="show">Show</string>
+    <string name="c_ch_1">CÁCH 1</string>
+    <string name="c_ch_2">CÁCH 2</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="currentNumber"
+            type="Integer" />
+        <variable
+            name="currentIsCheck"
+            type="Boolean" />
+        <variable
+            name="click"
+            type="com.example.tutorial.architecture_components.view_model_live_data_7.activity.CheckActivity.CheckAcivityClick" />
+    </data>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view_model_live_data_7.activity.CheckActivity">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="+1"
+            android:onLongClick="@{()->click.thongBao()}"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(currentNumber)}"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_isCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(currentIsCheck)}"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</layout>

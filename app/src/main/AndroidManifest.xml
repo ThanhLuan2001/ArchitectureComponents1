@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Databinding"
+        tools:targetApi="31">
+        <activity
+            android:name=".room_8.activity.PokemonActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view_model_live_data_7.activity.CountTimeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view_model_live_data_7.activity.CheckActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view_model_live_data_7.activity.ViewModelActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set_data_activity_1.activity.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".observable_databinding_3.activity.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".gone_visible_4.activity.ViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".binding_adapter_5.activity.ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".binding_adapter_5.activity.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lifecycle_6.activity.LifecycleActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

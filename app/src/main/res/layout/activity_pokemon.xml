@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room_8.activity.PokemonActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_pokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_below="@+id/rcv_pokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_1"
+            android:text="a"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:text="b"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:text="c"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
